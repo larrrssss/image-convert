@@ -116,7 +116,7 @@ pub fn to_png(
 
     mw.set_image_format("PNG")?;
 
-    mw.set_image_colorspace(8)?;
+    mw.set_image_colorspace(256)?;
 
     if let Some((x, y)) = config.ppi {
         mw.set_image_resolution(x.max(0f64), y.max(0f64))?;
